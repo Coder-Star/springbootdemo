@@ -59,5 +59,3 @@ hs_err_pid*
 *.iml
 out
 gen
-src/main/java/com/example/springbootdemo/dao/
-src/main/resources/static/
