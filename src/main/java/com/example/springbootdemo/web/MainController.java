@@ -13,7 +13,12 @@ import java.util.Map;
 public class MainController {
 
     @RequestMapping("/")
-    public String getPage(){
+    public String getIndexPage(){
+        return "index";
+    }
+
+    @RequestMapping("/main")
+    public String getMainPage(){
         return "main";
     }
 

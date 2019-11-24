@@ -1,10 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+
 <head>
-    <meta charset="UTF-8">
-    <title>index</title>
+    <meta charset="utf-8">
+    <title>主页菜单</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="Cache" content="no-cache">
+    <link rel="stylesheet" th:href="@{common/css/mui.min.css}">
 </head>
+
 <body>
-<p>这里是index页</p>
+
+<ul class="mui-table-view mui-table-view-chevron" style="margin-top: 10px" >
+    <li class="mui-table-view-cell mui-media">
+        <a class="mui-navigate-right" target="_blank" href="/main">
+            <div class="mui-media-body">
+                1、获取页面
+                <p class='mui-ellipsis' style="margin-top:4px">这里写注释</p>
+            </div>
+        </a>
+    </li>
+</ul>
+
+
 </body>
+
 </html>
