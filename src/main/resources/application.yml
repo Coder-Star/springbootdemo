@@ -16,4 +16,6 @@ spring:
         min-idle: 0 # 连接池中的最小空闲连接
 
   thymeleaf:
-    cache: false #是否缓存
+    cache: false #是否缓存，关闭缓存，否则刷新无法看到实时页面
+    suffix: .html #后缀
+    mode: HTML5 #类型

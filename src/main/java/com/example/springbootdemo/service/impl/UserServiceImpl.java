@@ -1,6 +1,6 @@
 package com.example.springbootdemo.service.impl;
 
-import com.example.springbootdemo.model.User;
+import com.example.springbootdemo.entity.User;
 import com.example.springbootdemo.service.IUserService;
 import org.springframework.stereotype.Service;
 

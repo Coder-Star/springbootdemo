@@ -1,7 +1,10 @@
-package com.example.springbootdemo.model;
+package com.example.springbootdemo.entity;
 
-public class User {
+import java.io.Serializable;
 
+public class User implements Serializable {
+
+    private static final long serialVersionUID = -3278158729088370999L;
     private  String name; //姓名
     private  String sex; // 性别
 

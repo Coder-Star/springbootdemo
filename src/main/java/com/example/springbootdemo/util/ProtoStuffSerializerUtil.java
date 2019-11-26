@@ -1,4 +1,4 @@
-package com.example.springbootdemo.utils;
+package com.example.springbootdemo.util;
 
 import com.dyuproject.protostuff.LinkedBuffer;
 import com.dyuproject.protostuff.ProtostuffIOUtil;

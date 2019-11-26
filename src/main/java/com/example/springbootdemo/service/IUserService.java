@@ -1,6 +1,6 @@
 package com.example.springbootdemo.service;
 
-import com.example.springbootdemo.model.User;
+import com.example.springbootdemo.entity.User;
 import org.springframework.stereotype.Service;
 
 @Service
