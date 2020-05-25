@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 
+@SuppressWarnings({"ALL", "AlibabaClassMustHaveAuthor"})
 @RestController
 @RequestMapping("/redis")
 public class RedisController {

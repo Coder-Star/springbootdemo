@@ -15,3 +15,15 @@ public class UserServiceImpl implements IUserService {
         return  user;
     }
 }
+
+@Service(value = "userServiceFriendlyImpl")
+class UserServiceFriendlyImpl implements IUserService {
+
+    @Override
+    public User getUser() {
+        User user = new User();
+        user.setName("李四");
+        user.setSex("男");
+        return  user;
+    }
+}
