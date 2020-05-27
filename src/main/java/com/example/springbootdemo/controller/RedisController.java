@@ -28,7 +28,8 @@ public class RedisController {
 
     @RequestMapping("getRedisInfo")
     public String getRedisInfo() {
-        String key = "OA:User:Id:124"; //使用:隔开，可以使用 业务名:表名:主键:标识值 这种格式 ，使用:隔开可以使用rdm时候分层显示
+        //使用:隔开，可以使用 业务名:表名:主键:标识值 这种格式 ，使用:隔开可以使用rdm分层显示
+        String key = "OA:User:Id:124";
         String info = redisUtil.get(key);
         if (info == null) {
             redisUtil.set(key,"这是一段信息");

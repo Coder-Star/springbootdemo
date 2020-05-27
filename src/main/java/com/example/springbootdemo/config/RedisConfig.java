@@ -31,6 +31,7 @@ public class RedisConfig extends CachingConfigurerSupport {
      * @return org.springframework.cache.interceptor.KeyGenerator
      * @description 生成redis存储建值
     */
+    @Override
     @Bean
     public KeyGenerator keyGenerator() {
         return new KeyGenerator() {

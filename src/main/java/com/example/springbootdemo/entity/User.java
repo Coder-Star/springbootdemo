@@ -5,8 +5,14 @@ import java.io.Serializable;
 public class User implements Serializable {
 
     private static final long serialVersionUID = -3278158729088370999L;
-    private  String name; //姓名
-    private  String sex; // 性别
+    /**
+     * 姓名
+     */
+    private  String name;
+    /**
+     * 性别
+     */
+    private  String sex;
 
     public String getName() {
         return name;
