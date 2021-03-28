@@ -10,8 +10,8 @@ public class UserServiceImpl implements IUserService {
     @Override
     public User getUser() {
         User user = new User();
-        user.setName("李三");
-        user.setSex("男");
+        user.setName("userServiceImpl");
+        user.setAge(18);
         return  user;
     }
 }
@@ -22,8 +22,8 @@ class UserServiceFriendlyImpl implements IUserService {
     @Override
     public User getUser() {
         User user = new User();
-        user.setName("李四");
-        user.setSex("男");
+        user.setName("userServiceFriendlyImpl");
+        user.setAge(18);
         return  user;
     }
 }

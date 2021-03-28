@@ -17,12 +17,10 @@ import java.util.Map;
 @RequestMapping("sub")
 public class SubMainController extends MainController {
 
-    @RequestMapping(value = "getSubMap",method = RequestMethod.GET)
+    @RequestMapping(value = "/getSubMap",method = RequestMethod.GET)
     public Map getSubMap(){
         Map<String,String> map = new HashMap<>(16);
-        map.put("name","张三徒弟");
-        map.put("age","19");
-        map.put("age1","191");
+        map.put("Controller名称","SubMainController");
         return map;
     }
 }

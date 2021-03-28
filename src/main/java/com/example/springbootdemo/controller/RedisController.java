@@ -16,13 +16,13 @@ public class RedisController {
     @Resource(name = "redisUtil")
     private RedisUtil redisUtil;
 
-    @RequestMapping("getUser")
+    @RequestMapping("getRedisUser")
     @Cacheable("user")
     public User getUser() {
         User user = new User();
-        user.setName("Redis");
-        user.setSex("男");
-        System.out.println(user.toString());
+        user.setName("Redis缓存用户");
+        user.setAge(18);
+        System.out.println("当在控制台看到这句话是表示本次请求没有使用缓存，如果看不到了表示本次请求使用了缓存");
         return user;
     }
 
@@ -32,7 +32,7 @@ public class RedisController {
         String key = "OA:User:Id:124";
         String info = redisUtil.get(key);
         if (info == null) {
-            redisUtil.set(key,"这是一段信息");
+            redisUtil.set(key,"这是从Redis中取出的信息");
         } else {
             return info;
         }
